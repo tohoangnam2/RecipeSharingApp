@@ -37,6 +37,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93B29F972DC9339E00CFF0B8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BBDEFF382DC931EE0079DC3F /* AppDelegate.swift */,
+				BBDEFF3A2DC931EE0079DC3F /* SceneDelegate.swift */,
+				BBDEFF3C2DC931EE0079DC3F /* ViewController.swift */,
+				BBDEFF3E2DC931EE0079DC3F /* Main.storyboard */,
+				BBDEFF412DC931F10079DC3F /* Assets.xcassets */,
+				BBDEFF432DC931F10079DC3F /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		93B29F982DC933CF00CFF0B8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		93B29F992DC933D600CFF0B8 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		93B29F9A2DC933F500CFF0B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		BBDEFF2C2DC931EE0079DC3F = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +90,10 @@
 		BBDEFF372DC931EE0079DC3F /* RecipeSharingApp */ = {
 			isa = PBXGroup;
 			children = (
-				BBDEFF382DC931EE0079DC3F /* AppDelegate.swift */,
-				BBDEFF3A2DC931EE0079DC3F /* SceneDelegate.swift */,
-				BBDEFF3C2DC931EE0079DC3F /* ViewController.swift */,
-				BBDEFF3E2DC931EE0079DC3F /* Main.storyboard */,
-				BBDEFF412DC931F10079DC3F /* Assets.xcassets */,
-				BBDEFF432DC931F10079DC3F /* LaunchScreen.storyboard */,
+				93B29F9A2DC933F500CFF0B8 /* Model */,
+				93B29F992DC933D600CFF0B8 /* Screens */,
+				93B29F982DC933CF00CFF0B8 /* Extensions */,
+				93B29F972DC9339E00CFF0B8 /* Resources */,
 				BBDEFF462DC931F10079DC3F /* Info.plist */,
 			);
 			path = RecipeSharingApp;
