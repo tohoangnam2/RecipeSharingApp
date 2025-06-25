@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LiveCollectionViewCell" customModule="RecipeSharingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="284" height="231"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="284" height="231"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live2" translatesAutoresizingMaskIntoConstraints="NO" id="gfy-aN-QqV">
+                        <rect key="frame" x="0.0" y="0.0" width="284" height="231"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_avatar" translatesAutoresizingMaskIntoConstraints="NO" id="Jpr-Rg-onl">
+                        <rect key="frame" x="10" y="24" width="98" height="37"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Devilled whitebait and calamari" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ddt-MP-zoD">
+                        <rect key="frame" x="32" y="96" width="226" height="43"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpi-tT-vd5">
+                        <rect key="frame" x="204" y="154" width="60" height="35"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="zoom"/>
+                        <buttonConfiguration key="configuration" style="plain" image="zoom">
+                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                        </buttonConfiguration>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Ddt-MP-zoD" firstAttribute="top" secondItem="Jpr-Rg-onl" secondAttribute="bottom" constant="35" id="424-Un-ZSj"/>
+                <constraint firstItem="Jpr-Rg-onl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="CH9-C7-4RP"/>
+                <constraint firstAttribute="bottom" secondItem="gfy-aN-QqV" secondAttribute="bottom" id="HDA-db-tiO"/>
+                <constraint firstAttribute="trailing" secondItem="gfy-aN-QqV" secondAttribute="trailing" id="HV5-t1-Zei"/>
+                <constraint firstItem="Ddt-MP-zoD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="32" id="QHW-MS-Qae"/>
+                <constraint firstItem="gpi-tT-vd5" firstAttribute="top" secondItem="Ddt-MP-zoD" secondAttribute="bottom" constant="15" id="XZf-k9-bZN"/>
+                <constraint firstItem="gfy-aN-QqV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dxX-1P-oi8"/>
+                <constraint firstAttribute="trailing" secondItem="Jpr-Rg-onl" secondAttribute="trailing" constant="176" id="ebP-tw-tzg"/>
+                <constraint firstItem="gfy-aN-QqV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="fgF-XZ-Kie"/>
+                <constraint firstItem="Jpr-Rg-onl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="24" id="oj1-5T-XYi"/>
+                <constraint firstAttribute="trailing" secondItem="gpi-tT-vd5" secondAttribute="trailing" constant="20" id="tro-ZL-Z8K"/>
+                <constraint firstAttribute="trailing" secondItem="Ddt-MP-zoD" secondAttribute="trailing" constant="26" id="vCQ-f9-PFd"/>
+            </constraints>
+            <size key="customSize" width="284" height="231"/>
+            <connections>
+                <outlet property="liveBGImage" destination="gfy-aN-QqV" id="ctS-fc-IDn"/>
+                <outlet property="liveImage" destination="Jpr-Rg-onl" id="EKE-en-upP"/>
+                <outlet property="liveLabel" destination="Ddt-MP-zoD" id="4pF-j7-d24"/>
+            </connections>
+            <point key="canvasLocation" x="274.88372093023253" y="-38.948497854077253"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_avatar" width="74" height="37"/>
+        <image name="live2" width="315" height="203"/>
+        <image name="zoom" width="36" height="21"/>
+    </resources>
+</document>

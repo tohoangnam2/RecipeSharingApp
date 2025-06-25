@@ -7,9 +7,11 @@ target 'RecipeSharingApp' do
 
   # Pods for RecipeSharingApp
   pod 'lottie-ios'
-#  pod 'Firebase/Analytics'
-#  pod 'Firebase/Crashlytics'
-#  pod 'FirebaseRemoteConfig'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Crashlytics'
+  pod 'FirebaseRemoteConfig'
+  pod 'FirebaseAuth'
   pod 'RealmSwift'
-  
+
+
 end

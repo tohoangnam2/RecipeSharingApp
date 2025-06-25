@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TopChefCollectionViewCell" customModule="RecipeSharingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="174" height="193"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="174" height="193"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="topchef1" translatesAutoresizingMaskIntoConstraints="NO" id="6nv-3P-jyZ">
+                        <rect key="frame" x="0.0" y="0.0" width="174" height="113"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Antonio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chR-3H-sRf">
+                        <rect key="frame" x="64.666666666666671" y="119" width="45" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="c2u-ep-jNW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="89 Recipes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w0b-of-Dbh">
+                        <rect key="frame" x="67.666666666666671" y="136" width="39" height="8"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="8" id="Sds-1d-MFn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="7"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="chR-3H-sRf" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="IRs-zR-RzY"/>
+                <constraint firstItem="w0b-of-Dbh" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="KDe-XM-kq0"/>
+                <constraint firstAttribute="trailing" secondItem="6nv-3P-jyZ" secondAttribute="trailing" id="KMx-OT-Z8Y"/>
+                <constraint firstItem="6nv-3P-jyZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="OyO-bL-EqS"/>
+                <constraint firstItem="chR-3H-sRf" firstAttribute="top" secondItem="6nv-3P-jyZ" secondAttribute="bottom" constant="6" id="aRQ-Lw-i0D"/>
+                <constraint firstItem="6nv-3P-jyZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mY5-T9-CHf"/>
+                <constraint firstItem="w0b-of-Dbh" firstAttribute="top" secondItem="chR-3H-sRf" secondAttribute="bottom" constant="1" id="oH9-ZX-XDZ"/>
+            </constraints>
+            <size key="customSize" width="174" height="193"/>
+            <connections>
+                <outlet property="nametopchefLabel" destination="chR-3H-sRf" id="WLn-rw-Td8"/>
+                <outlet property="timetopchefLabel" destination="w0b-of-Dbh" id="YkK-hk-exJ"/>
+                <outlet property="topchefImage" destination="6nv-3P-jyZ" id="L2g-cG-IMt"/>
+            </connections>
+            <point key="canvasLocation" x="195.41984732824426" y="-17.95774647887324"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="topchef1" width="80" height="113"/>
+    </resources>
+</document>
