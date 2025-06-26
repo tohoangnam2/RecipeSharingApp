@@ -45,10 +45,10 @@ let listTagImage = [
 
 let listLiveModel = [
   HomeModel(liveBGImage: UIImage(resource: .live1),liveImage: UIImage(resource: .icAvatar),liveLabel: "Devilled whitebait and calamari"),
-  HomeModel(liveBGImage: UIImage(resource: .live2),liveImage: UIImage(resource: .icAvatar),liveLabel: "Barbecued piri piri chicken"),
+  HomeModel(liveBGImage: UIImage(resource: .live1),liveImage: UIImage(resource: .icAvatar),liveLabel: "Barbecued piri piri chicken"),
   HomeModel(liveBGImage: UIImage(resource: .live1),liveImage: UIImage(resource: .icAvatar),liveLabel: "Devilled whitebait and calamari"),
   HomeModel(liveBGImage: UIImage(resource: .live1),liveImage: UIImage(resource: .icAvatar),liveLabel: "Devilled whitebait and calamari"),
-  HomeModel(liveBGImage: UIImage(resource: .live2),liveImage: UIImage(resource: .icAvatar),liveLabel: "Devilled whitebait and calamari"),
+  HomeModel(liveBGImage: UIImage(resource: .live1),liveImage: UIImage(resource: .icAvatar),liveLabel: "Devilled whitebait and calamari"),
   HomeModel(liveBGImage: UIImage(resource: .live1),liveImage: UIImage(resource: .icAvatar),liveLabel: "Devilled whitebait and calamari"),
 
 ]

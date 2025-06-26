@@ -29,7 +29,7 @@ class CountryAccViewController: UIViewController {
     self.push(viewControllerType: SetupAccViewViewController.self)
   }
   @IBAction func didTapHomeMain(_ sender: Any) {
-    self.push(viewControllerType: HomeViewController.self)
+    self.push(viewControllerType: MainTabBarController.self)
   }
   
 

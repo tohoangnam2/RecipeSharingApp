@@ -99,91 +99,18 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6LX-Ov-5NI">
-                    <rect key="frame" x="0.0" y="806" width="414" height="90"/>
-                    <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shape" translatesAutoresizingMaskIntoConstraints="NO" id="s5Z-Hk-lHK">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
-                        </imageView>
-                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="o6e-S5-rtV">
-                            <rect key="frame" x="30" y="40" width="354" height="30"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGh-d6-VvF">
-                                    <rect key="frame" x="0.0" y="0.0" width="59" height="30"/>
-                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                    <state key="normal" image="home_"/>
-                                    <buttonConfiguration key="configuration" style="plain" image="home_"/>
-                                    <connections>
-                                        <action selector="didTapHome:" destination="-1" eventType="touchUpInside" id="Pcu-1w-Ly7"/>
-                                    </connections>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arF-pb-SCF">
-                                    <rect key="frame" x="74" y="0.0" width="58.5" height="30"/>
-                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                    <state key="normal" image="Search 1"/>
-                                    <buttonConfiguration key="configuration" style="plain" image="Search 1"/>
-                                    <connections>
-                                        <action selector="didTapDiscover:" destination="-1" eventType="touchUpInside" id="Ovh-ht-p06"/>
-                                    </connections>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPn-3B-cAP">
-                                    <rect key="frame" x="147.5" y="0.0" width="59" height="30"/>
-                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                    <state key="normal" image="Add"/>
-                                    <buttonConfiguration key="configuration" style="plain" image="Add"/>
-                                    <connections>
-                                        <action selector="didTapAdd:" destination="-1" eventType="touchUpInside" id="QVD-vL-Etp"/>
-                                    </connections>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BI0-3J-FA9">
-                                    <rect key="frame" x="221.5" y="0.0" width="58.5" height="30"/>
-                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                    <state key="normal" image="Notification"/>
-                                    <buttonConfiguration key="configuration" style="plain" image="Notification"/>
-                                    <connections>
-                                        <action selector="didTapNofication:" destination="-1" eventType="touchUpInside" id="q6l-VR-ckR"/>
-                                    </connections>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BkA-BN-sQf">
-                                    <rect key="frame" x="295" y="0.0" width="59" height="30"/>
-                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                    <state key="normal" image="Profile"/>
-                                    <buttonConfiguration key="configuration" style="plain" image="Profile"/>
-                                    <connections>
-                                        <action selector="didTapProfile:" destination="-1" eventType="touchUpInside" id="EoN-Is-TUH"/>
-                                    </connections>
-                                </button>
-                            </subviews>
-                        </stackView>
-                    </subviews>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstItem="o6e-S5-rtV" firstAttribute="top" secondItem="6LX-Ov-5NI" secondAttribute="top" constant="40" id="25u-Q6-yn3"/>
-                        <constraint firstItem="s5Z-Hk-lHK" firstAttribute="top" secondItem="6LX-Ov-5NI" secondAttribute="top" id="AHU-Yb-lsD"/>
-                        <constraint firstItem="o6e-S5-rtV" firstAttribute="leading" secondItem="6LX-Ov-5NI" secondAttribute="leading" constant="30" id="AMC-WB-gHN"/>
-                        <constraint firstAttribute="height" constant="90" id="N1u-uZ-T95"/>
-                        <constraint firstAttribute="trailing" secondItem="o6e-S5-rtV" secondAttribute="trailing" constant="30" id="Owe-iG-dU9"/>
-                        <constraint firstAttribute="bottom" secondItem="s5Z-Hk-lHK" secondAttribute="bottom" id="QvR-3y-h3z"/>
-                        <constraint firstAttribute="trailing" secondItem="s5Z-Hk-lHK" secondAttribute="trailing" id="YMY-R1-uNb"/>
-                        <constraint firstItem="s5Z-Hk-lHK" firstAttribute="leading" secondItem="6LX-Ov-5NI" secondAttribute="leading" id="bfg-d5-GNX"/>
-                        <constraint firstAttribute="bottom" secondItem="o6e-S5-rtV" secondAttribute="bottom" constant="20" id="cGg-fc-exT"/>
-                    </constraints>
-                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="tiV-yn-yLP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="5vT-Gc-9mN"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6LX-Ov-5NI" secondAttribute="trailing" id="Obg-xt-Phi"/>
                 <constraint firstItem="AmG-vF-11O" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="SRi-Gw-3xh"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="x4k-g2-z7b" secondAttribute="trailing" id="Sh7-KZ-q78"/>
                 <constraint firstItem="x4k-g2-z7b" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Wju-K3-yUU"/>
                 <constraint firstItem="AmG-vF-11O" firstAttribute="top" secondItem="x4k-g2-z7b" secondAttribute="bottom" constant="25" id="akq-55-i6h"/>
                 <constraint firstItem="x4k-g2-z7b" firstAttribute="top" secondItem="tiV-yn-yLP" secondAttribute="bottom" constant="12" id="bzR-Wp-1Ox"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="AmG-vF-11O" secondAttribute="bottom" id="eng-FS-vFI"/>
-                <constraint firstAttribute="bottom" secondItem="6LX-Ov-5NI" secondAttribute="bottom" id="hYJ-y0-vAJ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AmG-vF-11O" secondAttribute="trailing" constant="30" id="ovz-rn-4uX"/>
-                <constraint firstItem="6LX-Ov-5NI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="peZ-8f-5Zf"/>
                 <constraint firstItem="tiV-yn-yLP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="qdP-Vf-KxM"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tiV-yn-yLP" secondAttribute="trailing" constant="20" id="xjv-Av-i6t"/>
             </constraints>
@@ -191,15 +118,9 @@
         </view>
     </objects>
     <resources>
-        <image name="Add" width="50" height="48"/>
-        <image name="Notification" width="25" height="24"/>
-        <image name="Profile" width="25" height="24"/>
-        <image name="Search 1" width="25" height="24"/>
-        <image name="Shape" width="375" height="138"/>
         <image name="dis1" width="140" height="39"/>
         <image name="dis2_n" width="86" height="39"/>
         <image name="dis3_n" width="111" height="39"/>
-        <image name="home_" width="25" height="25"/>
         <image name="search_discover" width="315" height="60"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

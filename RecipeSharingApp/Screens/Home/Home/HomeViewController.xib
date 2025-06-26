@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="iPad13_0rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
@@ -15,20 +15,21 @@
                 <outlet property="liveCollectionView" destination="XLL-Zq-6Xh" id="nOs-eb-bzu"/>
                 <outlet property="popularCollectionVIew" destination="XZq-OR-eiu" id="oXR-3Y-dO4"/>
                 <outlet property="tagCollectionView" destination="zax-Pu-xdO" id="aUu-pv-Htg"/>
+                <outlet property="titleHomeLabel" destination="bHN-ZY-V5C" id="nWn-Ky-Cn6"/>
                 <outlet property="topChefCollectionView" destination="lHf-Ch-O9m" id="riW-a2-M6q"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="1032" height="1376"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="euV-iX-9Wy">
-                    <rect key="frame" x="0.0" y="0.0" width="1032" height="1376"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wfS-k0-mmk">
-                            <rect key="frame" x="0.0" y="0.0" width="1032" height="1376"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qgi-kt-sCV">
                                     <rect key="frame" x="29" y="46" width="50" height="50"/>
@@ -44,7 +45,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYf-ek-5KY">
-                                    <rect key="frame" x="952" y="54" width="40" height="40"/>
+                                    <rect key="frame" x="334" y="54" width="40" height="40"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="40" id="aq3-Xa-HAd"/>
                                         <constraint firstAttribute="height" constant="40" id="gvX-0C-c0Q"/>
@@ -56,8 +57,11 @@
                                         <action selector="didTapSearchHome:" destination="-1" eventType="touchUpInside" id="AlR-Wf-6YE"/>
                                     </connections>
                                 </button>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHN-ZY-V5C">
-                                    <rect key="frame" x="30" y="134" width="899" height="62.5"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHN-ZY-V5C">
+                                    <rect key="frame" x="30" y="134" width="354" height="66"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="66" id="fjX-XZ-38d"/>
+                                    </constraints>
                                     <string key="text">What do you want to 
 cook today?</string>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="26"/>
@@ -65,7 +69,7 @@ cook today?</string>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="zax-Pu-xdO">
-                                    <rect key="frame" x="30" y="217.5" width="1002" height="39"/>
+                                    <rect key="frame" x="30" y="221" width="384" height="39"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="39" id="Q9M-vQ-0PE"/>
@@ -78,7 +82,7 @@ cook today?</string>
                                     </collectionViewFlowLayout>
                                 </collectionView>
                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="130" translatesAutoresizingMaskIntoConstraints="NO" id="bx0-90-W6c">
-                                    <rect key="frame" x="30" y="291.5" width="972" height="29"/>
+                                    <rect key="frame" x="30" y="285" width="354" height="29"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Live cooking" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQj-dU-lIS">
                                             <rect key="frame" x="0.0" y="5" width="127" height="24"/>
@@ -90,7 +94,7 @@ cook today?</string>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3d-gQ-taM">
-                                            <rect key="frame" x="257" y="5" width="715" height="24"/>
+                                            <rect key="frame" x="257" y="5" width="97" height="24"/>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                             <state key="normal" image="view all"/>
                                             <buttonConfiguration key="configuration" style="plain" image="view all"/>
@@ -104,7 +108,7 @@ cook today?</string>
                                     </constraints>
                                 </stackView>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="XLL-Zq-6Xh">
-                                    <rect key="frame" x="0.0" y="353.5" width="1032" height="193"/>
+                                    <rect key="frame" x="0.0" y="344" width="414" height="193"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="193" id="ELN-LZ-TJS"/>
@@ -123,7 +127,7 @@ cook today?</string>
                                     </userDefinedRuntimeAttributes>
                                 </collectionView>
                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="181" translatesAutoresizingMaskIntoConstraints="NO" id="FNp-1Z-qkd">
-                                    <rect key="frame" x="30" y="582.5" width="973" height="29"/>
+                                    <rect key="frame" x="30" y="567" width="355" height="29"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Top Chef" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIi-Ki-qIf">
                                             <rect key="frame" x="0.0" y="0.0" width="84" height="24"/>
@@ -132,7 +136,7 @@ cook today?</string>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yb-7H-iM4">
-                                            <rect key="frame" x="265" y="0.0" width="708" height="24"/>
+                                            <rect key="frame" x="265" y="0.0" width="90" height="24"/>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                             <state key="normal" image="view all"/>
                                             <buttonConfiguration key="configuration" style="plain" image="view all"/>
@@ -146,7 +150,7 @@ cook today?</string>
                                     </constraints>
                                 </stackView>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="lHf-Ch-O9m">
-                                    <rect key="frame" x="13" y="634.5" width="1019" height="143"/>
+                                    <rect key="frame" x="13" y="619" width="401" height="143"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="143" id="dWH-ja-iPJ"/>
@@ -159,7 +163,7 @@ cook today?</string>
                                     </collectionViewFlowLayout>
                                 </collectionView>
                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="112" translatesAutoresizingMaskIntoConstraints="NO" id="sdQ-Ir-gUD">
-                                    <rect key="frame" x="30" y="793.5" width="973" height="24"/>
+                                    <rect key="frame" x="30" y="778" width="355" height="24"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popular Recipes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qoi-E0-s6S">
                                             <rect key="frame" x="0.0" y="0.0" width="152" height="24"/>
@@ -168,7 +172,7 @@ cook today?</string>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJy-kS-SAg">
-                                            <rect key="frame" x="264" y="0.0" width="709" height="24"/>
+                                            <rect key="frame" x="264" y="0.0" width="91" height="24"/>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                             <state key="normal" image="view all"/>
                                             <buttonConfiguration key="configuration" style="plain" image="view all"/>
@@ -179,7 +183,7 @@ cook today?</string>
                                     </subviews>
                                 </stackView>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="XZq-OR-eiu">
-                                    <rect key="frame" x="28" y="843.5" width="974" height="532.5"/>
+                                    <rect key="frame" x="28" y="828" width="356" height="68"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="dIi-m7-kxA">
                                         <size key="itemSize" width="128" height="128"/>
@@ -191,17 +195,17 @@ cook today?</string>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
-                                <constraint firstAttribute="trailing" secondItem="bHN-ZY-V5C" secondAttribute="trailing" constant="103" id="0xA-IU-Vv5"/>
+                                <constraint firstAttribute="trailing" secondItem="bHN-ZY-V5C" secondAttribute="trailing" constant="30" id="0xA-IU-Vv5"/>
                                 <constraint firstItem="zax-Pu-xdO" firstAttribute="top" secondItem="bHN-ZY-V5C" secondAttribute="bottom" constant="21" id="2nm-uk-2We"/>
                                 <constraint firstAttribute="bottom" secondItem="XZq-OR-eiu" secondAttribute="bottom" id="6v8-zN-GQb"/>
                                 <constraint firstAttribute="trailing" secondItem="lHf-Ch-O9m" secondAttribute="trailing" id="7a4-OQ-B3v"/>
                                 <constraint firstItem="XLL-Zq-6Xh" firstAttribute="leading" secondItem="wfS-k0-mmk" secondAttribute="leading" id="Dhe-hy-ejK"/>
                                 <constraint firstAttribute="bottom" secondItem="XZq-OR-eiu" secondAttribute="bottom" id="Duj-hx-OxA"/>
                                 <constraint firstAttribute="trailing" secondItem="FNp-1Z-qkd" secondAttribute="trailing" constant="29" id="KB3-4k-7cX"/>
-                                <constraint firstItem="FNp-1Z-qkd" firstAttribute="top" secondItem="XLL-Zq-6Xh" secondAttribute="bottom" constant="36" id="MPU-0Q-CjX"/>
+                                <constraint firstItem="FNp-1Z-qkd" firstAttribute="top" secondItem="XLL-Zq-6Xh" secondAttribute="bottom" constant="30" id="MPU-0Q-CjX"/>
                                 <constraint firstItem="Qgi-kt-sCV" firstAttribute="leading" secondItem="wfS-k0-mmk" secondAttribute="leading" constant="29" id="OXX-fO-kz0"/>
                                 <constraint firstAttribute="trailing" secondItem="XLL-Zq-6Xh" secondAttribute="trailing" id="PmE-IB-PHQ"/>
-                                <constraint firstItem="bx0-90-W6c" firstAttribute="top" secondItem="zax-Pu-xdO" secondAttribute="bottom" constant="35" id="Q2j-tz-RYe"/>
+                                <constraint firstItem="bx0-90-W6c" firstAttribute="top" secondItem="zax-Pu-xdO" secondAttribute="bottom" constant="25" id="Q2j-tz-RYe"/>
                                 <constraint firstItem="sdQ-Ir-gUD" firstAttribute="leading" secondItem="wfS-k0-mmk" secondAttribute="leading" constant="30" id="SK5-IH-12W"/>
                                 <constraint firstAttribute="trailing" secondItem="bx0-90-W6c" secondAttribute="trailing" constant="30" id="W4t-29-DD9"/>
                                 <constraint firstAttribute="trailing" secondItem="zax-Pu-xdO" secondAttribute="trailing" id="X9j-CX-UKX"/>
@@ -211,7 +215,7 @@ cook today?</string>
                                 <constraint firstItem="lHf-Ch-O9m" firstAttribute="top" secondItem="FNp-1Z-qkd" secondAttribute="bottom" constant="23" id="bqk-ug-HrC"/>
                                 <constraint firstItem="bHN-ZY-V5C" firstAttribute="top" secondItem="Qgi-kt-sCV" secondAttribute="bottom" constant="38" id="cq2-4O-5Ge"/>
                                 <constraint firstItem="UYf-ek-5KY" firstAttribute="top" secondItem="wfS-k0-mmk" secondAttribute="top" constant="54" id="e3V-2D-ky3"/>
-                                <constraint firstItem="XLL-Zq-6Xh" firstAttribute="top" secondItem="bx0-90-W6c" secondAttribute="bottom" constant="33" id="fgi-ZV-Cvz"/>
+                                <constraint firstItem="XLL-Zq-6Xh" firstAttribute="top" secondItem="bx0-90-W6c" secondAttribute="bottom" constant="30" id="fgi-ZV-Cvz"/>
                                 <constraint firstItem="bHN-ZY-V5C" firstAttribute="leading" secondItem="wfS-k0-mmk" secondAttribute="leading" constant="30" id="gSb-Ma-6A1"/>
                                 <constraint firstItem="bx0-90-W6c" firstAttribute="leading" secondItem="wfS-k0-mmk" secondAttribute="leading" constant="30" id="gf5-I2-Lf6"/>
                                 <constraint firstAttribute="trailing" secondItem="sdQ-Ir-gUD" secondAttribute="trailing" constant="29" id="hHB-RO-IY9"/>
@@ -235,98 +239,21 @@ cook today?</string>
                     <viewLayoutGuide key="contentLayoutGuide" id="qwx-it-bGK"/>
                     <viewLayoutGuide key="frameLayoutGuide" id="yrV-ac-NZG"/>
                 </scrollView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YLI-8e-B8n">
-                    <rect key="frame" x="0.0" y="1286" width="1032" height="90"/>
-                    <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shape" translatesAutoresizingMaskIntoConstraints="NO" id="hcj-wK-m8W">
-                            <rect key="frame" x="0.0" y="0.0" width="1032" height="90"/>
-                        </imageView>
-                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4RS-I9-bXy">
-                            <rect key="frame" x="40" y="38" width="962" height="24"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugH-oI-9Fy">
-                                    <rect key="frame" x="0.0" y="0.0" width="192.5" height="24"/>
-                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                    <state key="normal" image="ic_home"/>
-                                    <buttonConfiguration key="configuration" style="plain" image="ic_home"/>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQg-Lm-2ar">
-                                    <rect key="frame" x="192.5" y="0.0" width="192.5" height="24"/>
-                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                    <state key="normal" image="Search 1"/>
-                                    <buttonConfiguration key="configuration" style="plain" image="Search 1"/>
-                                    <connections>
-                                        <action selector="didTapDiscover:" destination="-1" eventType="touchUpInside" id="TCO-70-1eB"/>
-                                    </connections>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3wh-DL-UXy">
-                                    <rect key="frame" x="385" y="0.0" width="192" height="24"/>
-                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                    <state key="normal" image="Add"/>
-                                    <buttonConfiguration key="configuration" style="plain" image="Add"/>
-                                    <connections>
-                                        <action selector="didTapAdd:" destination="-1" eventType="touchUpInside" id="7ej-bo-znR"/>
-                                    </connections>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kns-8w-2Xl">
-                                    <rect key="frame" x="577" y="0.0" width="192.5" height="24"/>
-                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                    <state key="normal" image="Notification"/>
-                                    <buttonConfiguration key="configuration" style="plain" image="Notification"/>
-                                    <connections>
-                                        <action selector="didTapNofication:" destination="-1" eventType="touchUpInside" id="Fat-oi-EQA"/>
-                                    </connections>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qes-fl-tgk">
-                                    <rect key="frame" x="769.5" y="0.0" width="192.5" height="24"/>
-                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                    <state key="normal" image="Profile"/>
-                                    <buttonConfiguration key="configuration" style="plain" image="Profile"/>
-                                    <connections>
-                                        <action selector="didTapProfile:" destination="-1" eventType="touchUpInside" id="hLX-uL-kNk"/>
-                                    </connections>
-                                </button>
-                            </subviews>
-                        </stackView>
-                    </subviews>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstItem="hcj-wK-m8W" firstAttribute="top" secondItem="YLI-8e-B8n" secondAttribute="top" id="6Bj-Hg-b4S"/>
-                        <constraint firstItem="hcj-wK-m8W" firstAttribute="leading" secondItem="YLI-8e-B8n" secondAttribute="leading" id="6DT-hw-Etk"/>
-                        <constraint firstAttribute="height" constant="90" id="DWc-Z4-kXT"/>
-                        <constraint firstItem="4RS-I9-bXy" firstAttribute="top" secondItem="YLI-8e-B8n" secondAttribute="top" constant="38" id="Ppd-3t-v2K"/>
-                        <constraint firstAttribute="trailing" secondItem="hcj-wK-m8W" secondAttribute="trailing" id="UAI-He-Rpc"/>
-                        <constraint firstAttribute="bottom" secondItem="hcj-wK-m8W" secondAttribute="bottom" id="bIR-vT-aXt"/>
-                        <constraint firstItem="4RS-I9-bXy" firstAttribute="leading" secondItem="YLI-8e-B8n" secondAttribute="leading" constant="40" id="brT-ma-jE2"/>
-                        <constraint firstAttribute="bottom" secondItem="4RS-I9-bXy" secondAttribute="bottom" constant="28" id="d5L-68-kbz"/>
-                        <constraint firstAttribute="trailing" secondItem="4RS-I9-bXy" secondAttribute="trailing" constant="30" id="m5P-oJ-wss"/>
-                    </constraints>
-                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="YLI-8e-B8n" secondAttribute="bottom" id="0A0-2a-jTc"/>
-                <constraint firstAttribute="trailing" secondItem="YLI-8e-B8n" secondAttribute="trailing" id="20O-F6-Pyu"/>
                 <constraint firstItem="euV-iX-9Wy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4iM-GL-edS"/>
                 <constraint firstAttribute="bottom" secondItem="euV-iX-9Wy" secondAttribute="bottom" id="FmN-ap-QRY"/>
                 <constraint firstItem="euV-iX-9Wy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Rj1-bk-yTH"/>
                 <constraint firstAttribute="trailing" secondItem="euV-iX-9Wy" secondAttribute="trailing" id="S95-zp-NGW"/>
-                <constraint firstItem="YLI-8e-B8n" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VKt-yi-qU3"/>
-                <constraint firstItem="YLI-8e-B8n" firstAttribute="top" secondItem="euV-iX-9Wy" secondAttribute="bottom" constant="-90" id="o7f-Z3-BAl"/>
             </constraints>
             <point key="canvasLocation" x="49" y="21"/>
         </view>
     </objects>
     <resources>
-        <image name="Add" width="50" height="48"/>
-        <image name="Notification" width="25" height="24"/>
-        <image name="Profile" width="25" height="24"/>
         <image name="Search" width="30" height="30"/>
-        <image name="Search 1" width="25" height="24"/>
-        <image name="Shape" width="375" height="138"/>
         <image name="avatar_test" width="50" height="50"/>
-        <image name="ic_home" width="25" height="31"/>
         <image name="view all" width="41" height="10"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

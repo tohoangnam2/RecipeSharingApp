@@ -9,6 +9,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+  @IBOutlet weak var titleHomeLabel: UILabel!
   @IBOutlet weak var homeScrollview: UIScrollView!
   @IBOutlet weak var tagCollectionView: UICollectionView!
   @IBOutlet weak var liveCollectionView: UICollectionView!
@@ -21,6 +22,16 @@ class HomeViewController: UIViewController {
     homeScrollview.layoutIfNeeded()
 
   }
+//  override func viewDidLayoutSubviews() {
+//      super.viewDidLayoutSubviews()
+//
+//      // Đảm bảo layout xong scrollView và collectionView
+//      homeScrollview.layoutIfNeeded()
+//
+//      // Set preferredMaxLayoutWidth cho title label nếu có
+//    titleHomeLabel.preferredMaxLayoutWidth = titleHomeLabel.frame.width
+//  }
+
 
   func setupCollectionView(){
 
@@ -140,6 +151,13 @@ extension HomeViewController : UICollectionViewDelegate , UICollectionViewDataSo
     case liveCollectionView :
       let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "LiveCollectionViewCell", for: indexPath) as! LiveCollectionViewCell
       cell.config(model: listLiveModel[indexPath.row])
+      cell.onTapLiveStream = {
+          let vc = LiveStreamingViewController(nibName: "LiveStreamingViewController", bundle: nil)
+          vc.hidesBottomBarWhenPushed = true
+          self.navigationController?.pushViewController(vc, animated: true)
+      }
+
+
       return cell
 
     case topChefCollectionView :
@@ -209,3 +227,11 @@ extension HomeViewController : UICollectionViewDelegate , UICollectionViewDataSo
     }
   }
 }
+//extension HomeViewController : LiveCollectionViewCellDelegate{
+//  func a() {
+//    let vc = LiveStreamingViewController(nibName: "LiveStreamingViewController", bundle: nil)
+//          vc.hidesBottomBarWhenPushed = true
+//          self.navigationController?.pushViewController(vc, animated: true)
+//  }
+//
+//}

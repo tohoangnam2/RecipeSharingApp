@@ -49,6 +49,18 @@
 		BB74F8182E01D94C009BC5CE /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB74F8172E01D94C009BC5CE /* APIService.swift */; };
 		BB74F81D2E03B912009BC5CE /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB74F81B2E03B912009BC5CE /* DiscoverViewController.swift */; };
 		BB74F81E2E03B912009BC5CE /* DiscoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB74F81C2E03B912009BC5CE /* DiscoverViewController.xib */; };
+		BB7BCD8F2E0C4DFD0019D826 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7BCD8E2E0C4DFD0019D826 /* TabBar.swift */; };
+		BB7BCD952E0C4FF80019D826 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7BCD932E0C4FF80019D826 /* AddViewController.swift */; };
+		BB7BCD962E0C4FF80019D826 /* AddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB7BCD942E0C4FF80019D826 /* AddViewController.xib */; };
+		BB7BCD992E0C50170019D826 /* NoficationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7BCD972E0C50170019D826 /* NoficationViewController.swift */; };
+		BB7BCD9A2E0C50170019D826 /* NoficationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB7BCD982E0C50170019D826 /* NoficationViewController.xib */; };
+		BB7BCD9D2E0C50260019D826 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7BCD9B2E0C50260019D826 /* ProfileViewController.swift */; };
+		BB7BCD9E2E0C50260019D826 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB7BCD9C2E0C50260019D826 /* ProfileViewController.xib */; };
+		BB7BCDA22E0CE8B80019D826 /* LiveStreamingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7BCDA02E0CE8B80019D826 /* LiveStreamingViewController.swift */; };
+		BB7BCDA32E0CE8B80019D826 /* LiveStreamingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB7BCDA12E0CE8B80019D826 /* LiveStreamingViewController.xib */; };
+		BB7BCDA82E0CF9AD0019D826 /* LiveStreamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7BCDA62E0CF9AD0019D826 /* LiveStreamTableViewCell.swift */; };
+		BB7BCDA92E0CF9AD0019D826 /* LiveStreamTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB7BCDA72E0CF9AD0019D826 /* LiveStreamTableViewCell.xib */; };
+		BB7BCDAC2E0CFAEE0019D826 /* ChatMessange.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB7BCDAB2E0CFAEE0019D826 /* ChatMessange.swift */; };
 		BB80DD7B2DCC52C9001EC6C4 /* ProductTourFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB80DD792DCC52C9001EC6C4 /* ProductTourFirstViewController.swift */; };
 		BB80DD7C2DCC52C9001EC6C4 /* ProductTourFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB80DD7A2DCC52C9001EC6C4 /* ProductTourFirstViewController.xib */; };
 		BB80DD812DCC5CA8001EC6C4 /* ProductTourSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB80DD802DCC5CA8001EC6C4 /* ProductTourSlider.swift */; };
@@ -119,6 +131,18 @@
 		BB74F8172E01D94C009BC5CE /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		BB74F81B2E03B912009BC5CE /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		BB74F81C2E03B912009BC5CE /* DiscoverViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoverViewController.xib; sourceTree = "<group>"; };
+		BB7BCD8E2E0C4DFD0019D826 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		BB7BCD932E0C4FF80019D826 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		BB7BCD942E0C4FF80019D826 /* AddViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddViewController.xib; sourceTree = "<group>"; };
+		BB7BCD972E0C50170019D826 /* NoficationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoficationViewController.swift; sourceTree = "<group>"; };
+		BB7BCD982E0C50170019D826 /* NoficationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoficationViewController.xib; sourceTree = "<group>"; };
+		BB7BCD9B2E0C50260019D826 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		BB7BCD9C2E0C50260019D826 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		BB7BCDA02E0CE8B80019D826 /* LiveStreamingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStreamingViewController.swift; sourceTree = "<group>"; };
+		BB7BCDA12E0CE8B80019D826 /* LiveStreamingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiveStreamingViewController.xib; sourceTree = "<group>"; };
+		BB7BCDA62E0CF9AD0019D826 /* LiveStreamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveStreamTableViewCell.swift; sourceTree = "<group>"; };
+		BB7BCDA72E0CF9AD0019D826 /* LiveStreamTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LiveStreamTableViewCell.xib; sourceTree = "<group>"; };
+		BB7BCDAB2E0CFAEE0019D826 /* ChatMessange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessange.swift; sourceTree = "<group>"; };
 		BB80DD792DCC52C9001EC6C4 /* ProductTourFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTourFirstViewController.swift; sourceTree = "<group>"; };
 		BB80DD7A2DCC52C9001EC6C4 /* ProductTourFirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTourFirstViewController.xib; sourceTree = "<group>"; };
 		BB80DD802DCC5CA8001EC6C4 /* ProductTourSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTourSlider.swift; sourceTree = "<group>"; };
@@ -179,6 +203,7 @@
 				BBDEFF3C2DC931EE0079DC3F /* ViewController.swift */,
 				BBDEFF3E2DC931EE0079DC3F /* Main.storyboard */,
 				BBDEFF412DC931F10079DC3F /* Assets.xcassets */,
+				BB7BCDA42E0CEDDE0019D826 /* livestreming */,
 				BBDEFF432DC931F10079DC3F /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
@@ -201,6 +226,10 @@
 		93B29F9C2DC934ED00CFF0B8 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				BB7BCD922E0C4F480019D826 /* Profile */,
+				BB7BCD912E0C4F410019D826 /* Nofication */,
+				BB7BCD902E0C4F360019D826 /* Add */,
+				BB7BCD8D2E0C4DEA0019D826 /* TabBar */,
 				BB74F8192E03B7BE009BC5CE /* Discover */,
 				BBCA529D2DEB13EE00A323A5 /* Home */,
 				BBD58C592DE5D13400222A51 /* Accounts */,
@@ -404,6 +433,7 @@
 		BB74F8192E03B7BE009BC5CE /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				BB7BCD9F2E0CE8940019D826 /* LiveStreaming */,
 				BB7BCD8C2E0BE5FA0019D826 /* Cells */,
 				BB74F81A2E03B8E9009BC5CE /* Main */,
 			);
@@ -423,8 +453,77 @@
 		BB7BCD8C2E0BE5FA0019D826 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				BB7BCDA52E0CF9880019D826 /* LiveStreamCell */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		BB7BCD8D2E0C4DEA0019D826 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				BB7BCD8E2E0C4DFD0019D826 /* TabBar.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		BB7BCD902E0C4F360019D826 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				BB7BCD932E0C4FF80019D826 /* AddViewController.swift */,
+				BB7BCD942E0C4FF80019D826 /* AddViewController.xib */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		BB7BCD912E0C4F410019D826 /* Nofication */ = {
+			isa = PBXGroup;
+			children = (
+				BB7BCD972E0C50170019D826 /* NoficationViewController.swift */,
+				BB7BCD982E0C50170019D826 /* NoficationViewController.xib */,
+			);
+			path = Nofication;
+			sourceTree = "<group>";
+		};
+		BB7BCD922E0C4F480019D826 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				BB7BCD9B2E0C50260019D826 /* ProfileViewController.swift */,
+				BB7BCD9C2E0C50260019D826 /* ProfileViewController.xib */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		BB7BCD9F2E0CE8940019D826 /* LiveStreaming */ = {
+			isa = PBXGroup;
+			children = (
+				BB7BCDA02E0CE8B80019D826 /* LiveStreamingViewController.swift */,
+				BB7BCDA12E0CE8B80019D826 /* LiveStreamingViewController.xib */,
+			);
+			path = LiveStreaming;
+			sourceTree = "<group>";
+		};
+		BB7BCDA42E0CEDDE0019D826 /* livestreming */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = livestreming;
+			sourceTree = "<group>";
+		};
+		BB7BCDA52E0CF9880019D826 /* LiveStreamCell */ = {
+			isa = PBXGroup;
+			children = (
+				BB7BCDA62E0CF9AD0019D826 /* LiveStreamTableViewCell.swift */,
+				BB7BCDA72E0CF9AD0019D826 /* LiveStreamTableViewCell.xib */,
+			);
+			path = LiveStreamCell;
+			sourceTree = "<group>";
+		};
+		BB7BCDAA2E0CFAC60019D826 /* LiveStreamModel */ = {
+			isa = PBXGroup;
+			children = (
+				BB7BCDAB2E0CFAEE0019D826 /* ChatMessange.swift */,
+			);
+			path = LiveStreamModel;
 			sourceTree = "<group>";
 		};
 		BB80DD772DCC5288001EC6C4 /* ProductTour */ = {
@@ -449,6 +548,7 @@
 		BB80DD7D2DCC5947001EC6C4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BB7BCDAA2E0CFAC60019D826 /* LiveStreamModel */,
 				BB74F8162E01D938009BC5CE /* API */,
 				BB713BF62DED8F49003E41AA /* HomeModels */,
 				BB1422A92DE99E8400D72973 /* SessionManager */,
@@ -634,12 +734,15 @@
 				BBDEFF422DC931F10079DC3F /* Assets.xcassets in Resources */,
 				BB1422AE2DE9AFFF00D72973 /* SetupViewController.xib in Resources */,
 				BB5834842DDF2D4100397BBE /* LoginViewController.xib in Resources */,
+				BB7BCDA92E0CF9AD0019D826 /* LiveStreamTableViewCell.xib in Resources */,
 				BB80DD7C2DCC52C9001EC6C4 /* ProductTourFirstViewController.xib in Resources */,
+				BB7BCD9A2E0C50170019D826 /* NoficationViewController.xib in Resources */,
 				BB6A5CC62E05577A005B0A18 /* GalleriersCollectionViewCell.xib in Resources */,
 				BB16B5292DE5EE9D00D48CC3 /* HeaderCountryAccView.xib in Resources */,
 				BBDEFF452DC931F10079DC3F /* Base in Resources */,
 				BBDEFF402DC931EE0079DC3F /* Base in Resources */,
 				BB713C062DEDB337003E41AA /* PopularCollectionViewCell.xib in Resources */,
+				BB7BCD9E2E0C50260019D826 /* ProfileViewController.xib in Resources */,
 				93B29FB12DC9361B00CFF0B8 /* SplashViewController.xib in Resources */,
 				BB80DD872DCC6521001EC6C4 /* ProductTourThirdViewController.xib in Resources */,
 				BB16B5212DE5E45300D48CC3 /* CountryAccTableViewCell.xib in Resources */,
@@ -647,11 +750,13 @@
 				BB80DD8B2DCC66CC001EC6C4 /* ProductTourSecondViewController.xib in Resources */,
 				BB713BFE2DEDB313003E41AA /* LiveCollectionViewCell.xib in Resources */,
 				BB713BF42DED8F1B003E41AA /* TagCollectionViewCell.xib in Resources */,
+				BB7BCD962E0C4FF80019D826 /* AddViewController.xib in Resources */,
 				BB1422A72DE995BA00D72973 /* SetupDatailViewController.xib in Resources */,
 				BBBB64772DD1E17D00C7CE38 /* RegisterViewController.xib in Resources */,
 				BB74F8152E019D1D009BC5CE /* ViewHomeAllViewController.xib in Resources */,
 				BBD58C5C2DE5D16E00222A51 /* CountryAccViewController.xib in Resources */,
 				BBCA52A22DEB148800A323A5 /* HomeViewController.xib in Resources */,
+				BB7BCDA32E0CE8B80019D826 /* LiveStreamingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -720,21 +825,26 @@
 				BB16B5202DE5E45300D48CC3 /* CountryAccTableViewCell.swift in Sources */,
 				BB713BF52DED8F1B003E41AA /* TagCollectionViewCell.swift in Sources */,
 				BBDEFF392DC931EE0079DC3F /* AppDelegate.swift in Sources */,
+				BB7BCDA22E0CE8B80019D826 /* LiveStreamingViewController.swift in Sources */,
 				BB9669152DE860EE0007737A /* User+CoreDataClass copy.swift in Sources */,
 				BBDEFF3B2DC931EE0079DC3F /* SceneDelegate.swift in Sources */,
 				BB80DD8D2DCCF914001EC6C4 /* ProductTourThirdViewController.swift in Sources */,
 				BB74F81D2E03B912009BC5CE /* DiscoverViewController.swift in Sources */,
 				BB96690E2DE85F1E0007737A /* UserModel.xcdatamodeld in Sources */,
 				93B29FA72DC9353C00CFF0B8 /* UIColor+Extension.swift in Sources */,
+				BB7BCD992E0C50170019D826 /* NoficationViewController.swift in Sources */,
 				BB74F8182E01D94C009BC5CE /* APIService.swift in Sources */,
 				BBD58C5D2DE5D16E00222A51 /* CountryAccViewController.swift in Sources */,
 				BBBB64762DD1E17D00C7CE38 /* RegisterViewController.swift in Sources */,
 				93B29FAE2DC9355A00CFF0B8 /* DefaultStorage.swift in Sources */,
 				93B29FA82DC9353C00CFF0B8 /* UIView+Radius.swift in Sources */,
+				BB7BCD8F2E0C4DFD0019D826 /* TabBar.swift in Sources */,
 				BB16B5242DE5E4FC00D48CC3 /* CountryAccModel.swift in Sources */,
 				BB713BFF2DEDB313003E41AA /* LiveCollectionViewCell.swift in Sources */,
+				BB7BCDAC2E0CFAEE0019D826 /* ChatMessange.swift in Sources */,
 				BB80DD812DCC5CA8001EC6C4 /* ProductTourSlider.swift in Sources */,
 				BB16B5272DE5EE6800D48CC3 /* HeaderCountryAccView.swift in Sources */,
+				BB7BCD952E0C4FF80019D826 /* AddViewController.swift in Sources */,
 				93B29FA92DC9353C00CFF0B8 /* UIView+Border.swift in Sources */,
 				93B29FAA2DC9353C00CFF0B8 /* PushViewController.swift in Sources */,
 				BB5834832DDF2D4100397BBE /* LoginViewController.swift in Sources */,
@@ -743,6 +853,8 @@
 				BB1422A82DE995BA00D72973 /* SetupDatailViewController.swift in Sources */,
 				BB713C072DEDB337003E41AA /* PopularCollectionViewCell.swift in Sources */,
 				BB80DD8A2DCC66CC001EC6C4 /* ProductTourSecondViewController.swift in Sources */,
+				BB7BCDA82E0CF9AD0019D826 /* LiveStreamTableViewCell.swift in Sources */,
+				BB7BCD9D2E0C50260019D826 /* ProfileViewController.swift in Sources */,
 				93B29FB22DC9361B00CFF0B8 /* SplashViewController.swift in Sources */,
 				BB6A5CC52E05577A005B0A18 /* GalleriersCollectionViewCell.swift in Sources */,
 			);

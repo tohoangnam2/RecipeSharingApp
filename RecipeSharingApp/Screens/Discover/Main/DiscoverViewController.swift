@@ -24,6 +24,10 @@ class DiscoverViewController: UIViewController {
     setupView()
     setupDiscoverCollectionView()
   }
+  override func viewWillAppear(_ animated: Bool) {
+          super.viewWillAppear(animated)
+          navigationController?.setNavigationBarHidden(true, animated: animated)
+      }
 
   func setupView(){
     switch discoverViewAllType {

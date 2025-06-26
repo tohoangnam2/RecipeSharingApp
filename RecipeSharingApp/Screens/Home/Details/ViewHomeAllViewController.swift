@@ -72,7 +72,14 @@ extension ViewHomeAllViewController:UICollectionViewDelegate, UICollectionViewDa
     switch viewAllType{
     case .liveCooking :
       let cell = viewAllCollectionView.dequeueReusableCell(withReuseIdentifier: "LiveCollectionViewCell", for: indexPath) as! LiveCollectionViewCell
+
       cell.config(model: listLiveModel[indexPath.row])
+      cell.onTapLiveStream = {
+          let vc = LiveStreamingViewController(nibName: "LiveStreamingViewController", bundle: nil)
+        vc.hidesBottomBarWhenPushed = true
+          self.navigationController?.pushViewController(vc, animated: true)
+      }
+
       return cell
 
     case .topChef :
