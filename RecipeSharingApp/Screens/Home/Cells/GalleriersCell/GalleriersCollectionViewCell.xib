@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GalleriersCollectionViewCell" customModule="RecipeSharingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="243" height="174"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="243" height="174"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gallar2" translatesAutoresizingMaskIntoConstraints="NO" id="Dzw-95-1dh">
+                        <rect key="frame" x="0.0" y="0.0" width="243" height="174"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Dzw-95-1dh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="1zR-Jg-D1e"/>
+                <constraint firstAttribute="bottom" secondItem="Dzw-95-1dh" secondAttribute="bottom" id="oSk-mn-1Jv"/>
+                <constraint firstAttribute="trailing" secondItem="Dzw-95-1dh" secondAttribute="trailing" id="oeu-UB-xUi"/>
+                <constraint firstItem="Dzw-95-1dh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="pz2-TS-wbn"/>
+            </constraints>
+            <size key="customSize" width="243" height="174"/>
+            <connections>
+                <outlet property="galleriersImage" destination="Dzw-95-1dh" id="EvT-HK-283"/>
+            </connections>
+            <point key="canvasLocation" x="286.25954198473283" y="-23.943661971830988"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="gallar2" width="108.33333587646484" height="108.33333587646484"/>
+    </resources>
+</document>

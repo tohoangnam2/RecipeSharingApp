@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProductTourFirstViewController" customModule="RecipeSharingApp" customModuleProvider="target">
+            <connections>
+                <outlet property="slider" destination="eze-gK-z8l" id="kk4-TR-sXD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Hd3-Ce-byD">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_prod1" translatesAutoresizingMaskIntoConstraints="NO" id="HlN-wb-dcz">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share Your Recipes" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Me-dK-y46">
+                            <rect key="frame" x="27" y="572" width="339" height="95.666666666666629"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur  elit, sed do eiusmod tempor incididunt ut." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubv-tn-f9S">
+                            <rect key="frame" x="27" y="687.66666666666663" width="339" height="28.666666666666629"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="eze-gK-z8l" customClass="ProductTourSlider" customModule="RecipeSharingApp" customModuleProvider="target">
+                            <rect key="frame" x="118" y="759.33333333333337" width="157" height="53.666666666666629"/>
+                        </slider>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="5Me-dK-y46" firstAttribute="top" secondItem="Hd3-Ce-byD" secondAttribute="top" constant="572" id="06U-xd-fB6"/>
+                        <constraint firstItem="5Me-dK-y46" firstAttribute="leading" secondItem="Hd3-Ce-byD" secondAttribute="leading" constant="27" id="09O-MM-Smn"/>
+                        <constraint firstItem="5Me-dK-y46" firstAttribute="centerX" secondItem="Hd3-Ce-byD" secondAttribute="centerX" id="0n2-Yl-LfE"/>
+                        <constraint firstAttribute="bottom" secondItem="HlN-wb-dcz" secondAttribute="bottom" id="7RP-IH-ha8"/>
+                        <constraint firstItem="eze-gK-z8l" firstAttribute="leading" secondItem="Hd3-Ce-byD" secondAttribute="leading" constant="120" id="CGc-wW-dsF"/>
+                        <constraint firstAttribute="trailing" secondItem="HlN-wb-dcz" secondAttribute="trailing" id="FfX-vw-4FH"/>
+                        <constraint firstItem="HlN-wb-dcz" firstAttribute="leading" secondItem="Hd3-Ce-byD" secondAttribute="leading" id="Hnl-ii-Wy1"/>
+                        <constraint firstItem="ubv-tn-f9S" firstAttribute="top" secondItem="5Me-dK-y46" secondAttribute="bottom" constant="20" id="IUX-xt-5r2"/>
+                        <constraint firstItem="eze-gK-z8l" firstAttribute="centerX" secondItem="Hd3-Ce-byD" secondAttribute="centerX" id="JHw-XX-d6J"/>
+                        <constraint firstItem="eze-gK-z8l" firstAttribute="top" secondItem="ubv-tn-f9S" secondAttribute="bottom" constant="43" id="KYS-yX-96O"/>
+                        <constraint firstAttribute="trailing" secondItem="eze-gK-z8l" secondAttribute="trailing" constant="120" id="akf-5K-eaS"/>
+                        <constraint firstItem="HlN-wb-dcz" firstAttribute="top" secondItem="Hd3-Ce-byD" secondAttribute="top" id="duj-RD-tb0"/>
+                        <constraint firstItem="ubv-tn-f9S" firstAttribute="leading" secondItem="Hd3-Ce-byD" secondAttribute="leading" constant="27" id="pW3-KW-t3g"/>
+                        <constraint firstAttribute="bottom" secondItem="eze-gK-z8l" secondAttribute="bottom" constant="40" id="qLS-LD-B57"/>
+                        <constraint firstItem="ubv-tn-f9S" firstAttribute="centerX" secondItem="Hd3-Ce-byD" secondAttribute="centerX" id="vOh-Bt-OsA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Hd3-Ce-byD" secondAttribute="trailing" id="Qpx-LS-FdT"/>
+                <constraint firstItem="Hd3-Ce-byD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="W94-IK-7o8"/>
+                <constraint firstAttribute="bottom" secondItem="Hd3-Ce-byD" secondAttribute="bottom" id="cx3-yF-Ifk"/>
+                <constraint firstItem="Hd3-Ce-byD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pIP-W4-Vd8"/>
+            </constraints>
+            <point key="canvasLocation" x="94" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home_prod1" width="335" height="772"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

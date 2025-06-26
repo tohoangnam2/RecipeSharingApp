@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SetupViewController" customModule="RecipeSharingApp" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_Setup" translatesAutoresizingMaskIntoConstraints="NO" id="tMV-Ux-Ylx">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IHV-Yi-SbW">
+                    <rect key="frame" x="0.0" y="283" width="414" height="613"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_setup1" translatesAutoresizingMaskIntoConstraints="NO" id="fSz-4i-HVw">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="613"/>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Bof-Fj-jx5">
+                            <rect key="frame" x="50" y="256" width="289" height="167"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsY-Xl-E83">
+                                    <rect key="frame" x="0.0" y="0.0" width="289" height="96"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="96" id="Jsc-XZ-zbG"/>
+                                    </constraints>
+                                    <attributedString key="attributedText">
+                                        <fragment>
+                                            <string key="content">Setup
+Completed</string>
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="40" name="HelveticaNeue-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Your account is now ready to go. Click the continue button below to start exploring Appétit features!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7hH-uh-B40">
+                                    <rect key="frame" x="0.0" y="116" width="289" height="51"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="51" id="3kB-Vp-0pS"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="bsY-Xl-E83" firstAttribute="top" secondItem="Bof-Fj-jx5" secondAttribute="top" id="1k3-78-joz"/>
+                                <constraint firstItem="bsY-Xl-E83" firstAttribute="leading" secondItem="Bof-Fj-jx5" secondAttribute="leading" id="Aig-8Y-3j7"/>
+                                <constraint firstAttribute="trailing" secondItem="7hH-uh-B40" secondAttribute="trailing" id="Ft3-YX-HLl"/>
+                                <constraint firstAttribute="trailing" secondItem="bsY-Xl-E83" secondAttribute="trailing" id="gP9-iG-lfL"/>
+                                <constraint firstAttribute="bottom" secondItem="7hH-uh-B40" secondAttribute="bottom" id="iuh-YH-C3u"/>
+                                <constraint firstItem="7hH-uh-B40" firstAttribute="leading" secondItem="Bof-Fj-jx5" secondAttribute="leading" id="kGu-yt-PpR"/>
+                            </constraints>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOG-QK-29E">
+                            <rect key="frame" x="100" y="525" width="214" height="60"/>
+                            <color key="backgroundColor" red="0.24705882352941178" green="0.70588235294117641" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="ux2-3B-Zz6"/>
+                            </constraints>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Back"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="didtapHome:" destination="-1" eventType="touchUpInside" id="Wyv-Ra-JSO"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="fSz-4i-HVw" firstAttribute="leading" secondItem="IHV-Yi-SbW" secondAttribute="leading" id="6B4-4Y-kfD"/>
+                        <constraint firstAttribute="bottom" secondItem="HOG-QK-29E" secondAttribute="bottom" constant="28" id="8RZ-KH-gJv"/>
+                        <constraint firstAttribute="trailing" secondItem="Bof-Fj-jx5" secondAttribute="trailing" constant="75" id="LU7-TK-GYD"/>
+                        <constraint firstItem="Bof-Fj-jx5" firstAttribute="leading" secondItem="IHV-Yi-SbW" secondAttribute="leading" constant="50" id="OQJ-us-R7s"/>
+                        <constraint firstAttribute="trailing" secondItem="fSz-4i-HVw" secondAttribute="trailing" id="Xjn-hf-OVP"/>
+                        <constraint firstItem="Bof-Fj-jx5" firstAttribute="top" secondItem="IHV-Yi-SbW" secondAttribute="top" constant="256" id="Ygb-0V-f06"/>
+                        <constraint firstItem="fSz-4i-HVw" firstAttribute="top" secondItem="IHV-Yi-SbW" secondAttribute="top" id="aSk-L5-sGK"/>
+                        <constraint firstItem="HOG-QK-29E" firstAttribute="leading" secondItem="IHV-Yi-SbW" secondAttribute="leading" constant="100" id="cCm-eo-IxM"/>
+                        <constraint firstAttribute="bottom" secondItem="fSz-4i-HVw" secondAttribute="bottom" id="nGS-i3-ApU"/>
+                        <constraint firstAttribute="trailing" secondItem="HOG-QK-29E" secondAttribute="trailing" constant="100" id="sm6-OE-siy"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="tMV-Ux-Ylx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="BGU-9b-pwH"/>
+                <constraint firstAttribute="trailing" secondItem="IHV-Yi-SbW" secondAttribute="trailing" id="YiR-Sq-u7W"/>
+                <constraint firstItem="tMV-Ux-Ylx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YjY-a5-I6I"/>
+                <constraint firstAttribute="bottom" secondItem="tMV-Ux-Ylx" secondAttribute="bottom" id="aXG-vU-EmZ"/>
+                <constraint firstItem="IHV-Yi-SbW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="r21-Nu-YtP"/>
+                <constraint firstAttribute="bottom" secondItem="IHV-Yi-SbW" secondAttribute="bottom" id="t2b-fN-mb4"/>
+                <constraint firstItem="IHV-Yi-SbW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="235" id="u0a-s7-AeB"/>
+                <constraint firstAttribute="trailing" secondItem="tMV-Ux-Ylx" secondAttribute="trailing" id="zmo-JA-8v7"/>
+            </constraints>
+            <point key="canvasLocation" x="105" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_Setup" width="335" height="766"/>
+        <image name="bg_setup1" width="335" height="531"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DiscoverViewController" customModule="RecipeSharingApp" customModuleProvider="target">
+            <connections>
+                <outlet property="discoverCollectionView" destination="AmG-vF-11O" id="I1m-dS-ZYS"/>
+                <outlet property="foodRecipeButton" destination="1Bd-mY-T7z" id="qxc-05-2cD"/>
+                <outlet property="galleries" destination="Dke-kp-b0u" id="BRB-Vs-h9e"/>
+                <outlet property="liveButton" destination="Sbg-JQ-IQm" id="4pg-gC-vBG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tiV-yn-yLP">
+                    <rect key="frame" x="20" y="68" width="374" height="74"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="search_discover"/>
+                    <buttonConfiguration key="configuration" style="plain" image="search_discover"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x4k-g2-z7b">
+                    <rect key="frame" x="20" y="154" width="394" height="39"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9O8-27-f2y">
+                            <rect key="frame" x="0.0" y="0.0" width="394" height="39"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="yFK-U2-PZs">
+                                    <rect key="frame" x="0.0" y="0.0" width="409" height="38.5"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Bd-mY-T7z">
+                                            <rect key="frame" x="0.0" y="0.0" width="164" height="38.5"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" image="dis1"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="dis1"/>
+                                            <connections>
+                                                <action selector="didTapFoodRecipe:" destination="-1" eventType="touchUpInside" id="Qg7-mn-VZf"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sbg-JQ-IQm">
+                                            <rect key="frame" x="164" y="0.0" width="110" height="38.5"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" image="dis2_n"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="dis2_n"/>
+                                            <connections>
+                                                <action selector="didTapLive:" destination="-1" eventType="touchUpInside" id="PTO-6r-snO"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dke-kp-b0u">
+                                            <rect key="frame" x="274" y="0.0" width="135" height="38.5"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" image="dis3_n"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="dis3_n"/>
+                                            <connections>
+                                                <action selector="didTapGalleriers:" destination="-1" eventType="touchUpInside" id="C4D-DU-3te"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="AUf-ae-7vZ" firstAttribute="bottom" secondItem="yFK-U2-PZs" secondAttribute="bottom" id="3P7-IW-Xp1"/>
+                                <constraint firstItem="yFK-U2-PZs" firstAttribute="top" secondItem="AUf-ae-7vZ" secondAttribute="top" id="5CY-7z-IHU"/>
+                                <constraint firstAttribute="bottom" secondItem="yFK-U2-PZs" secondAttribute="bottom" id="7JR-EY-fKG"/>
+                                <constraint firstItem="yFK-U2-PZs" firstAttribute="trailing" secondItem="AUf-ae-7vZ" secondAttribute="trailing" id="7hh-C8-vpE"/>
+                                <constraint firstItem="yFK-U2-PZs" firstAttribute="leading" secondItem="AUf-ae-7vZ" secondAttribute="leading" id="YTp-VN-9xX"/>
+                                <constraint firstItem="yFK-U2-PZs" firstAttribute="height" secondItem="tGw-gk-Gqi" secondAttribute="height" multiplier="0.982906" id="eNJ-2S-s6g"/>
+                            </constraints>
+                            <viewLayoutGuide key="contentLayoutGuide" id="AUf-ae-7vZ"/>
+                            <viewLayoutGuide key="frameLayoutGuide" id="tGw-gk-Gqi"/>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="9O8-27-f2y" firstAttribute="top" secondItem="x4k-g2-z7b" secondAttribute="top" id="6iM-pc-SLr"/>
+                        <constraint firstAttribute="height" constant="39" id="9a4-Pq-G9T"/>
+                        <constraint firstAttribute="bottom" secondItem="9O8-27-f2y" secondAttribute="bottom" id="Vgm-Sh-drA"/>
+                        <constraint firstItem="9O8-27-f2y" firstAttribute="leading" secondItem="x4k-g2-z7b" secondAttribute="leading" id="beT-3y-UYV"/>
+                        <constraint firstAttribute="trailing" secondItem="9O8-27-f2y" secondAttribute="trailing" id="vAQ-wA-nHg"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="AmG-vF-11O">
+                    <rect key="frame" x="30" y="218" width="354" height="644"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="D77-m6-FYP">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6LX-Ov-5NI">
+                    <rect key="frame" x="0.0" y="806" width="414" height="90"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shape" translatesAutoresizingMaskIntoConstraints="NO" id="s5Z-Hk-lHK">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="o6e-S5-rtV">
+                            <rect key="frame" x="30" y="40" width="354" height="30"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zGh-d6-VvF">
+                                    <rect key="frame" x="0.0" y="0.0" width="59" height="30"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="home_"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="home_"/>
+                                    <connections>
+                                        <action selector="didTapHome:" destination="-1" eventType="touchUpInside" id="Pcu-1w-Ly7"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arF-pb-SCF">
+                                    <rect key="frame" x="74" y="0.0" width="58.5" height="30"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="Search 1"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="Search 1"/>
+                                    <connections>
+                                        <action selector="didTapDiscover:" destination="-1" eventType="touchUpInside" id="Ovh-ht-p06"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPn-3B-cAP">
+                                    <rect key="frame" x="147.5" y="0.0" width="59" height="30"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="Add"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="Add"/>
+                                    <connections>
+                                        <action selector="didTapAdd:" destination="-1" eventType="touchUpInside" id="QVD-vL-Etp"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BI0-3J-FA9">
+                                    <rect key="frame" x="221.5" y="0.0" width="58.5" height="30"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="Notification"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="Notification"/>
+                                    <connections>
+                                        <action selector="didTapNofication:" destination="-1" eventType="touchUpInside" id="q6l-VR-ckR"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BkA-BN-sQf">
+                                    <rect key="frame" x="295" y="0.0" width="59" height="30"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="Profile"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="Profile"/>
+                                    <connections>
+                                        <action selector="didTapProfile:" destination="-1" eventType="touchUpInside" id="EoN-Is-TUH"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="o6e-S5-rtV" firstAttribute="top" secondItem="6LX-Ov-5NI" secondAttribute="top" constant="40" id="25u-Q6-yn3"/>
+                        <constraint firstItem="s5Z-Hk-lHK" firstAttribute="top" secondItem="6LX-Ov-5NI" secondAttribute="top" id="AHU-Yb-lsD"/>
+                        <constraint firstItem="o6e-S5-rtV" firstAttribute="leading" secondItem="6LX-Ov-5NI" secondAttribute="leading" constant="30" id="AMC-WB-gHN"/>
+                        <constraint firstAttribute="height" constant="90" id="N1u-uZ-T95"/>
+                        <constraint firstAttribute="trailing" secondItem="o6e-S5-rtV" secondAttribute="trailing" constant="30" id="Owe-iG-dU9"/>
+                        <constraint firstAttribute="bottom" secondItem="s5Z-Hk-lHK" secondAttribute="bottom" id="QvR-3y-h3z"/>
+                        <constraint firstAttribute="trailing" secondItem="s5Z-Hk-lHK" secondAttribute="trailing" id="YMY-R1-uNb"/>
+                        <constraint firstItem="s5Z-Hk-lHK" firstAttribute="leading" secondItem="6LX-Ov-5NI" secondAttribute="leading" id="bfg-d5-GNX"/>
+                        <constraint firstAttribute="bottom" secondItem="o6e-S5-rtV" secondAttribute="bottom" constant="20" id="cGg-fc-exT"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="tiV-yn-yLP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="5vT-Gc-9mN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6LX-Ov-5NI" secondAttribute="trailing" id="Obg-xt-Phi"/>
+                <constraint firstItem="AmG-vF-11O" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="SRi-Gw-3xh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="x4k-g2-z7b" secondAttribute="trailing" id="Sh7-KZ-q78"/>
+                <constraint firstItem="x4k-g2-z7b" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Wju-K3-yUU"/>
+                <constraint firstItem="AmG-vF-11O" firstAttribute="top" secondItem="x4k-g2-z7b" secondAttribute="bottom" constant="25" id="akq-55-i6h"/>
+                <constraint firstItem="x4k-g2-z7b" firstAttribute="top" secondItem="tiV-yn-yLP" secondAttribute="bottom" constant="12" id="bzR-Wp-1Ox"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="AmG-vF-11O" secondAttribute="bottom" id="eng-FS-vFI"/>
+                <constraint firstAttribute="bottom" secondItem="6LX-Ov-5NI" secondAttribute="bottom" id="hYJ-y0-vAJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AmG-vF-11O" secondAttribute="trailing" constant="30" id="ovz-rn-4uX"/>
+                <constraint firstItem="6LX-Ov-5NI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="peZ-8f-5Zf"/>
+                <constraint firstItem="tiV-yn-yLP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="qdP-Vf-KxM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tiV-yn-yLP" secondAttribute="trailing" constant="20" id="xjv-Av-i6t"/>
+            </constraints>
+            <point key="canvasLocation" x="105" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Add" width="50" height="48"/>
+        <image name="Notification" width="25" height="24"/>
+        <image name="Profile" width="25" height="24"/>
+        <image name="Search 1" width="25" height="24"/>
+        <image name="Shape" width="375" height="138"/>
+        <image name="dis1" width="140" height="39"/>
+        <image name="dis2_n" width="86" height="39"/>
+        <image name="dis3_n" width="111" height="39"/>
+        <image name="home_" width="25" height="25"/>
+        <image name="search_discover" width="315" height="60"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

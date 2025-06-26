@@ -11,6 +11,8 @@
 			<key>UIWindowSceneSessionRoleApplication</key>
 			<array>
 				<dict>
+          <key>NSPhotoLibraryUsageDescription</key>
+          <string>Ứng dụng cần truy cập thư viện ảnh để cập nhật ảnh đại diện.</string>
 					<key>UISceneConfigurationName</key>
 					<string>Default Configuration</string>
 					<key>UISceneDelegateClassName</key>
